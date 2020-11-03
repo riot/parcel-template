@@ -8,19 +8,19 @@
     "test": "nyc --require esm --require jsdom-global/register --require ./test/register-riot-extension.js mocha src/**/*.spec.js"
   },
   "devDependencies": {
-    "@riotjs/compiler": "^4.9.2",
-    "@riotjs/ssr": "^4.2.1",
+    "@riotjs/compiler": "^5.0.0",
+    "@riotjs/ssr": "^5.0.0",
     "@riotjs/parcel-plugin-riot": "^4.0.1",
     "parcel-bundler": "^1.12.4",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.4.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^8.0.1",
+    "mocha": "^8.2.1",
     "nyc": "^15.1.0"
   },
   "dependencies": {
     "@riotjs/hot-reload": "^4.0.1",
-    "riot": "^4.13.2"
+    "riot": "^5.0.0"
   }
 }

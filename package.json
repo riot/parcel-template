@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@riotjs/compiler": "^5.0.0",
-    "@riotjs/ssr": "^5.0.0",
-    "@riotjs/parcel-plugin-riot": "^4.0.1",
+    "@riotjs/ssr": "^6.0.0",
+    "@riotjs/parcel-plugin-riot": "^5.0.1",
     "parcel-bundler": "^1.12.4",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
@@ -20,7 +20,7 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "@riotjs/hot-reload": "^4.0.1",
+    "@riotjs/hot-reload": "^5.0.0",
     "riot": "^5.0.0"
   }
 }

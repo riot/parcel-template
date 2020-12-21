@@ -5,19 +5,19 @@
     "build": "parcel build index.html --out-dir=dist",
     "prepublishOnly": "npm test",
     "start": "parcel index.html --open",
-    "test": "nyc --require esm --require jsdom-global/register --require ./test/register-riot-extension.js mocha src/**/*.spec.js"
+    "test": "nyc --require esm --require jsdom-global/register --require @riotjs/register mocha src/**/*.spec.js"
   },
   "devDependencies": {
     "@riotjs/compiler": "^5.0.0",
-    "@riotjs/ssr": "^6.0.0",
     "@riotjs/parcel-plugin-riot": "^5.0.1",
-    "parcel-bundler": "^1.12.4",
+    "@riotjs/register": "^5.0.0",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
     "jsdom": "^16.4.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^8.2.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "@riotjs/hot-reload": "^5.0.0",

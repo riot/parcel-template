@@ -56,6 +56,7 @@ npm-debug.log
 coverage
 generated
 /dist
+.parcel-cache/
 
 # these files are generated anyway
 .nycrc

@@ -11,7 +11,7 @@
     "@parcel/config-default": "^2.0.0",
     "@parcel/resolver-glob": "^2.0.0",
     "@riotjs/compiler": "^6.0.4",
-    "@riotjs/parcel-transformer-riot": "^7.0.1",
+    "@riotjs/parcel-transformer-riot": "^7.0.3",
     "@riotjs/register": "^5.0.0",
     "chai": "^4.3.4",
     "esm": "^3.2.25",

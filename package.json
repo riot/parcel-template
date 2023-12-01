@@ -1,29 +1,30 @@
 {
   "scripts": {
-    "cov": "nyc report --reporter=text-lcov",
-    "cov-html": "nyc report --reporter=html",
-    "build": "parcel build index.html --out-dir=dist",
+    "cov": "c8 report --reporter=text-lcov",
+    "cov-html": "c8 report --reporter=html",
+    "build": "parcel build index.html --dist-dir=dist",
     "prepublishOnly": "npm test",
     "start": "parcel index.html --open",
-    "test": "nyc --require esm --require jsdom-global/register --require @riotjs/register mocha src/**/*.spec.js"
+    "test": "NODE_OPTIONS=\"--loader @riotjs/register\" c8 mocha --require jsdom-global/register src/**/*.spec.js"
   },
+  "type": "module",
   "devDependencies": {
-    "@parcel/config-default": "^2.7.0",
-    "@parcel/resolver-glob": "^2.7.0",
-    "@riotjs/compiler": "^6.3.2",
-    "@riotjs/parcel-transformer-riot": "^7.0.4",
-    "@riotjs/register": "^6.0.1",
-    "chai": "^4.3.6",
-    "esm": "^3.2.25",
-    "jsdom": "^20.0.0",
+    "@parcel/config-default": "^2.10.3",
+    "@parcel/resolver-glob": "^2.10.3",
+    "@riotjs/compiler": "^9.0.6",
+    "@riotjs/parcel-transformer-riot": "^9.0.1",
+    "@riotjs/register": "^9.0.0",
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "jsdom": "^23.0.1",
     "jsdom-global": "^3.0.2",
-    "mocha": "^8.4.0",
-    "nyc": "^15.1.0",
-    "parcel": "^2.7.0",
+    "mocha": "^10.2.0",
+    "parcel": "^2.10.3",
+    "prettier": "^3.1.0",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@riotjs/hot-reload": "^6.0.1",
-    "riot": "^7.0.3"
+    "@riotjs/hot-reload": "^9.0.1",
+    "riot": "^9.1.2"
   }
 }
